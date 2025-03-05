@@ -18,9 +18,14 @@ tags: ["develop"]
 | [EPLB](#eplb) | <https://github.com/deepseek-ai/EPLB> | 专家并行的负载均衡 |/ |
 | 3FS | <https://github.com/deepseek-ai/3FS> | 基于SSD和RDMA的并行文件系统 ([19年就有了][3]) | / |
 
+DeepSeek [推理系统分析][4]
+
+知乎刘聪解读: <https://www.zhihu.com/question/13730017341/answer/113528218599>
+
 > `Hopper` 架构的显卡估计都是H系列(H100, H800)
 
 
 [1]: https://x.com/deepseek_ai/status/1892786555494019098
 [2]: https://www.zhihu.com/question/13613217943/answer/112585723186
 [3]: https://www.high-flyer.cn/blog/3fs/
+[4]: https://zhuanlan.zhihu.com/p/27181462601
