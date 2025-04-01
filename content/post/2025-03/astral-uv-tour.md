@@ -104,6 +104,42 @@ uv run --python 3.13 test.py
 - `uv run` 执行项目
 - `uv build` 构建项目
 
+## project-example
+
+使用 `uv` 的项目实操 以 [adbili][2] 为例
+
+### init
+
+一般是 `uv init YOUR_PROJECT` 创建项目 或者 `uv init .` 初始化已有项目
+
+但这里是需要打包成为工具 所以 `uv init --package -p 3.10 .` 同时指定Python版本 (用3.10是为了 typing hint)
+
+### dependency
+
+给项目添加依赖: `uv add -r requirements.txt`
+
+这里注意一下 需要给 uv 换源 毕竟 uv 不读取 `~/.config/pip/pip.conf`
+
+```bash
+cat << EOF >> pyproject.toml # 项目级别
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple" # <-- 要用的源
+default = true
+EOF
+
+
+cat << EOF >> ~/.config/uv/uv.toml # 用户级别
+[[index]]
+url = "https://test.pypi.org/simple" # <-- 要用的源
+default = true
+EOF
+```
+
+### run
+
+`uv run adbili <args>` 执行项目
+
+
 ## conclusion
 
 总体来说 `uv` 和 `miniconda`/`micromamba` 是比较正交的
@@ -120,3 +156,4 @@ uv run --python 3.13 test.py
 主要还是对于深度学习项目友好
 
 [1]: https://docs.astral.sh/uv/guides/package/
+[2]: https://github.com/HUGHNew/adbili/commit/21cf9d264c5472da6749c38332328d79e6398cfa
