@@ -26,13 +26,20 @@ o_t^{(s)} = {\rm Attention}(q_t^{(s)},k_{\le t}^{(s)},v_{\le t}^{(s)})
 = \triangleq \frac{\sum_{i \leq t} \exp \left( q_t^{(s)} k_i^{(s) \top} \right) v_i^{(s)}}
 {\sqrt{d_k}\sum_{i \leq t} \exp \left( q_t^{(s)} k_i^{(s) \top} \right)}
 $$
+
 其中 $q_t^{(s)},k_{\le t}^{(s)},v_{\le t}^{(s)}$ 分别表示第 $t$ 个位置的QKV向量
+
+
 $$
-\begin{array}{l}
-q_i^{(s)} &= x_i W_q^{(s)} \in \mathbb{R}^{d_q},  \quad &W_q^{(s)} \in \mathbb{R}^{d \times d_q} \\
-k_i^{(s)} &= x_i W_k^{(s)} \in \mathbb{R}^{d_k},  \quad &W_k^{(s)} \in \mathbb{R}^{d \times d_k} \\
-v_i^{(s)} &= x_i W_v^{(s)} \in \mathbb{R}^{d_v},  \quad &W_v^{(s)} \in \mathbb{R}^{d \times d_v}
-\end{array}
+q_i^{(s)} = x_i W_q^{(s)} \in \mathbb{R}^{d_q},  \quad W_q^{(s)} \in \mathbb{R}^{d \times d_q}
+$$
+
+$$
+k_i^{(s)} = x_i W_k^{(s)} \in \mathbb{R}^{d_k},  \quad W_k^{(s)} \in \mathbb{R}^{d \times d_k}
+$$
+
+$$
+v_i^{(s)} = x_i W_v^{(s)} \in \mathbb{R}^{d_v},  \quad W_v^{(s)} \in \mathbb{R}^{d \times d_v}
 $$
 
 对于实际生成的 $t+1$ 个 token 之前的 $k_{\le t}^{(s)}, v_{\le t}^{(s)}$ 是不需要重复算的 这就是 KV Cache (如下图)
@@ -83,8 +90,9 @@ MLA (Multi-Level Attention) 是 DeepSeek-V2 时的工作
 
 文章的角度是从低秩投影的角度来引入的
 
+$$c_t^{\rm KV} = W^{DKV}h_t$$
+
 $$
-c_t^{\rm KV} = W^{DKV}h_t\\
 k_t^C = W^{\rm DK}c_t^{\rm KV}, \quad
 v_t^C = W^{\rm DV}c_t^{\rm KV}
 $$
@@ -112,10 +120,10 @@ $$
 
 DeepSeek 使用的方案就是对于 QK 新增 $d_r$ 个维度来存储 RoPE 信息 其中K新增维度共享
 
-$$
-q_i^{(s)} = [x_i W_{qc}^{(s)}, x_i W_{qr}^{(s)}\mathcal{R}_i] \in \mathbb{R}^{d_k+d_r}\\
-k_i^{(s)} = [c_i W_{kc}^{(s)}, x_i W_{kr}\mathcal{R}_i] \in \mathbb{R}^{d_k+d_r}
-$$
+- $q_i^{(s)} = [x_i W_{qc}^{(s)}, x_i W_{qr}^{(s)}\mathcal{R}_i] \in \mathbb{R}^{d_k+d_r}$
+- $k_i^{(s)} = [c_i W_{kc}^{(s)}, x_i W_{kr}\mathcal{R}_i] \in \mathbb{R}^{d_k+d_r}$
+
+
 
 ## Comparison
 
