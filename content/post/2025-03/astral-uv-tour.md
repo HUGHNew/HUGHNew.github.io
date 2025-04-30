@@ -137,8 +137,29 @@ EOF
 
 ### run
 
+因为这里是打包为工具 所以需要注意 要在 `__init__.py` 暴露 `main` 函数作为默认程序入口 如下示例
+
+```python
+import fire
+
+from adbili.main import app
+
+def main():
+    fire.Fire(app)
+```
+
+
 `uv run adbili <args>` 执行项目
 
+### publish
+
+后续直接
+- `uv build`
+- `uv publish`
+
+就完工了
+
+然后就可以在 PyPI 上看见 [adbili](https://pypi.org/project/adbili/)
 
 ## conclusion
 
