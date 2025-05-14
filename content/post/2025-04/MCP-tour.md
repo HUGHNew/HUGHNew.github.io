@@ -318,6 +318,10 @@ if __name__ == "__main__":
 - `chat_loop`: CLI
 
 ```python
+# /// script
+# requires-python = ">=3.10"
+# dependencies = [ollama, mcp]
+# ///
 from typing import Optional
 from contextlib import AsyncExitStack
 import asyncio
@@ -470,4 +474,9 @@ uv run client.py server.py
 
 # 2. 远程服务
 uv run client.py https://docs.mcp.cloudflare.com/sse
+
+# 3. 不使用 uv
+pip install ollama "mcp[cli]"
+python client.py server.py
+python client.py https://docs.mcp.cloudflare.com/sse
 ```
