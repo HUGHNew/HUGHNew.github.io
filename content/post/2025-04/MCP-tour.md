@@ -469,5 +469,5 @@ if __name__ == "__main__":
 uv run client.py server.py
 
 # 2. 远程服务
-uv run client/ola.py https://docs.mcp.cloudflare.com/sse
+uv run client.py https://docs.mcp.cloudflare.com/sse
 ```
