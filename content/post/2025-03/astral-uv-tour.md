@@ -63,6 +63,16 @@ if __name__ == "__main__":
 
 使用 `uv pip install` 下载包 会自动检测环境并添加相关依赖
 
+## tool-usage
+
+`uv tool` 可以使用和安装工具 (带CLI的Python包) 这部分跟 `pipx` 差不多
+
+主要功能是为工具安装独立的环境 然后将工具入口放置在统一路径下
+
+- `uv tool run/uvx`/`pipx run` 临时使用工具
+- `uv tool install <tool>`/`pipx install <tool>` 下载工具到默认路径 持久化保存
+- uninstall/list/...
+
 ## python-manage
 
 `uv` 的 Python 版本管理的方式为统一下载 然后使用时根据配置信息选用
