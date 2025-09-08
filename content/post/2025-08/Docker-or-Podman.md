@@ -48,3 +48,36 @@ podman run -d --pod test_pod --name test_container alpine sleep 1000
 docker与podman使用nvidia-container的配置方法一致 同时启动显卡支持的容器都需要root权限
 
 但是如果平时使用 rootless 模式 这里需要提权的话 root是不与普通用户共享数据的 所以镜像会有两份 在这方面 还不如docker
+
+## macOS
+
+如果使用 macOS 的话 这俩都不能原生支持 都需要跑在虚拟机上
+
+由于套了一层虚拟机 podman的rootless基本没优势 就不如直接 docker
+
+另外 podman 的虚拟机感觉不太好用 不如直接用 [lima](https://github.com/lima-vm/lima) 创建虚拟机 然后在虚拟机中操作
+
+```bash
+# installation
+brew install lima
+
+# default storage path
+export LIMA_HOME=...
+# default instance name (for lima)
+export LIMA_INSTANCE=debian
+
+# create VM using default instance name ($LIMA_INSTANCE)
+limactl create template://debian
+
+# start VM
+limactl start debian
+
+# VM ops (lima === limactl shell $LIMA_INSTANCE)
+lima <cmd>
+
+# enter VM shell 
+lima
+
+# stop VM
+limactl stop debian
+```
