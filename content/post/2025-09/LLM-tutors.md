@@ -25,6 +25,7 @@ Inference
 
 Others
 - A Survey on Diffusion Language Models ([arXiv:2508.10875](https://arxiv.org/abs/2508.10875))
+- Implicit Reasoning in Large Language Models: A Comprehensive Survey ([arXiv:2509.02350](https://arxiv.org/abs/2509.02350))
 
 
 
