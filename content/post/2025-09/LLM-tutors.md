@@ -1,11 +1,24 @@
 ---
-title: "LLM related surveys and guides you may need"
+title: "LLM tutor launchs from scratch"
 date: 2025-09-08T13:34:59+08:00
-description: 最近一些有趣的概括性内容
+description: 简单的LLM入门与最近一些有意思的综述
 categories: ["survey", "introduction"]
 layout: search
 tags: ["research"]
 ---
+
+Preliminary
+- [d2l 中文](https://github.com/d2l-ai/d2l-zh)
+- [Transformer from Seq2Seq](https://github.com/bentrevett/pytorch-seq2seq): Example with detailed code
+- [LLM 全景速览](https://github.com/luhengshiwo/LLMForEverybody)
+
+Application
+- [LLM 应用开发实践笔记](https://github.com/morsoli/llm-books)
+- [Transformers 库快速入门](https://github.com/jsksxs360/How-to-use-Transformers)
+
+Reproduce
+- [从头构建Llama](https://github.com/datawhalechina/llms-from-scratch-cn)
+- [Llama3详细拆解与构建](https://github.com/naklecha/llama3-from-scratch)
 
 Post-Training
 - LLM Post-Training: A Deep Dive into Reasoning Large Language Models ([arXiv:2502.21321](https://arxiv.org/abs/2502.21321))
@@ -26,10 +39,4 @@ Inference
 Others
 - A Survey on Diffusion Language Models ([arXiv:2508.10875](https://arxiv.org/abs/2508.10875))
 - Implicit Reasoning in Large Language Models: A Comprehensive Survey ([arXiv:2509.02350](https://arxiv.org/abs/2509.02350))
-
-
-
-
-
-
 
