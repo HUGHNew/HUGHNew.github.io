@@ -171,10 +171,11 @@ ZeRO-3: 分片优化器和梯度和模型权重
 MoE的基础架构修改是把`Linear`改成了`Gated Linears` 就显得EP类似TP特例
 
 $$
-\begin{align*}
-\text{MoE}(x) &  = \sum_{i=1}^nG(x)_iE_i(x) \\
-G(x) & = \text{TopK}(softmax(W_g(x)+\epsilon))
-\end{align*}
+\text{MoE}(x) = \sum_{i=1}^nG(x)_iE_i(x)
+$$
+
+$$
+G(x) = \text{TopK}(softmax(W_g(x)+\epsilon))
 $$
 
 #### GShard
