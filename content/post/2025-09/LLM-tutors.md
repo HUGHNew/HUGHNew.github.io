@@ -15,6 +15,7 @@ Preliminary
 Application
 - [LLM 应用开发实践笔记](https://github.com/morsoli/llm-books)
 - [Transformers 库快速入门](https://github.com/jsksxs360/How-to-use-Transformers)
+- [RAG Survey](https://arxiv.org/abs/2503.10677) A Survey on Knowledge-Oriented Retrieval-Augmented Generation
 
 Reproduce
 - [从头构建Llama](https://github.com/datawhalechina/llms-from-scratch-cn)
@@ -25,6 +26,7 @@ Post-Training
 - Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning Large Language Models ([arXiv:2503.09567](https://arxiv.org/abs/2503.09567))
 - A Survey of Context Engineering for Large Language Models ([arXiv:2507.13334](https://arxiv.org/abs/2507.13334))
 - The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities ([arXiv:2408.13296](https://arxiv.org/abs/2408.13296))
+- A Survey of Reinforcement Learning for Large Reasoning Models ([arXiv:2509.08827](https://arxiv.org/abs/2509.08827))
 
 
 Agent
@@ -35,6 +37,7 @@ Agent
 Inference
 - [LLM Inference Handbook](https://www.bentoml.com/llm/) by BentoML
 - A Survey on Test-Time Scaling in Large Language Models: What, How, Where, and How Well? ([arXiv:2503.24235](https://arxiv.org/abs/2503.24235))
+- [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
 
 Others
 - A Survey on Diffusion Language Models ([arXiv:2508.10875](https://arxiv.org/abs/2508.10875))
