@@ -28,6 +28,10 @@ Post-Training
 - The Ultimate Guide to Fine-Tuning LLMs from Basics to Breakthroughs: An Exhaustive Review of Technologies, Research, Best Practices, Applied Research Challenges and Opportunities ([arXiv:2408.13296](https://arxiv.org/abs/2408.13296))
 - A Survey of Reinforcement Learning for Large Reasoning Models ([arXiv:2509.08827](https://arxiv.org/abs/2509.08827))
 
+Determinism
+- [Defeating Nondeterminism in LLM Inference](https://thinkingmachines.ai/blog/defeating-nondeterminism-in-llm-inference/)
+- [Off-Policy Training by framework](https://fengyao.notion.site/off-policy-rl)
+- [IcePop: 解决训练推理不一致问题](https://ringtech.notion.site/icepop)
 
 Agent
 - AI4Research: A Survey of Artificial Intelligence for Scientific Research ([arXiv:2507.01903](https://arxiv.org/abs/2507.01903))
