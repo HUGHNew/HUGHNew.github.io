@@ -22,6 +22,7 @@ Reproduce
 - [Llama3详细拆解与构建](https://github.com/naklecha/llama3-from-scratch)
 
 Post-Training
+- Scaling Down to Scale Up: A Guide to Parameter-Efficient Fine-Tuning [arXiv:2303.15647](https://arxiv.org/abs/2303.15647)
 - LLM Post-Training: A Deep Dive into Reasoning Large Language Models ([arXiv:2502.21321](https://arxiv.org/abs/2502.21321))
 - Towards Reasoning Era: A Survey of Long Chain-of-Thought for Reasoning Large Language Models ([arXiv:2503.09567](https://arxiv.org/abs/2503.09567))
 - A Survey of Context Engineering for Large Language Models ([arXiv:2507.13334](https://arxiv.org/abs/2507.13334))

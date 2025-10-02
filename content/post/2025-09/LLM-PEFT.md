@@ -108,8 +108,15 @@ P-Tuning 的主要问题
 
 $W = W^{(0)}+ \Delta = W^{(0)}+BA$
 
-实现发现 矩阵加在 QV 上效果最好
+实验发现(QKVO) 矩阵加在 QV 上效果最好
 
+> [Thinking Machines](https://thinkingmachines.ai/blog/lora/) 发现 MLP 上的 LoRA 效果更好
+具体发现如下:
+1. 对于中小型指令和推理数据(instruction & reasoning) LoRA 与 FullFT 相同
+2. 超出 LoRA 容量数据集 表现较差 训练效率下降
+3. 对大批量容忍度更低 正常训练也需要更高的学习率(10x)
+4. LoRA 用于 MLP/MoE 效果好于 attn
+5. LoRA 在强化学习上的表现与 FullFT 相当 (强化学习所需容量非常低)
 
 ### AdaLoRA
 
