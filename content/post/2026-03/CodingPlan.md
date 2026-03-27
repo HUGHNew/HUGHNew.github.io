@@ -19,9 +19,9 @@ tags: ["develop"]
 
 | 厂商 | 更新时间 | 最低套餐 | 套餐情况 |
 | --- | :-----: | :----: | ------- |
-| [GLM][glm] | 2026.3.21 | Lite 49 | 80 P/5h<br/>400 P/w |
+| [GLM][glm] | 2026.3.21 | Lite 49 | 80 P/5h<br>400 P/w |
 | [Kimi][kimi] | 2026.3.21 | Lite 49 | ? |
-| [MiniMax][minimax] | 2026.3.21 | Starter 29 | 600 R/5h |
+| [MiniMax][minimax] | 2026.3.21 | Starter 29 | 600 R/5h<br>6000 R/w |
 
 
 ### GLM
@@ -56,10 +56,10 @@ Pro 的限额和价格都是 Lite 的 5 倍
 
 | 厂商 | 更新时间 | 最低套餐 | 套餐情况 | 可用模型 |
 | --- | :-----: | :----: | ------- | ------ |
-| [腾讯云][txc] | 2026.3.21 | Lite 40(~~7.9~~) | 1200 R/5h<br/>9000 R/w<br/>18000 R/m | GLM-5/Kimi-K2.5/MiniMax-M2.5/HY |
-| [百度云][bdc] | 2026.3.21 | Lite 40 | 1200 R/5h<br/>9000 R/w<br/>18000 R/m | GLM-5/Kimi-K2.5/MiniMax-M2.5/DeepSeek-V3.2 |
+| [腾讯云][txc] | 2026.3.21 | Lite 40(~~7.9~~) | 1200 R/5h<br>9000 R/w<br>18000 R/m | GLM-5/Kimi-K2.5/MiniMax-M2.5/HY |
+| [百度云][bdc] | 2026.3.21 | Lite 40 | 1200 R/5h<br>9000 R/w<br>18000 R/m | GLM-5/Kimi-K2.5/MiniMax-M2.5/DeepSeek-V3.2 |
 | [阿里云][blc] | 2026.3.21 | Pro 200 | 90000 R/m | GLM-5/Kimi-K2.5/MiniMax-M2.5/DeepSeek-V3.2/Qwen |
-| [火山引擎][ve] | 2026.3.21 | Lite 40(~~9.9~~) | 1200 R/5h<br/>9000 R/w<br/>18000 R/m | GLM-4.7/Kimi-K2.5/MiniMax-M2.5/DeepSeek-V3.2/Doubao |
+| [火山引擎][ve] | 2026.3.21 | Lite 40(~~9.9~~) | 1200 R/5h<br>9000 R/w<br>18000 R/m | GLM-4.7/Kimi-K2.5/MiniMax-M2.5/DeepSeek-V3.2/Doubao |
 
 
 [glm]: https://www.bigmodel.cn/glm-coding
