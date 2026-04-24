@@ -34,13 +34,13 @@ tags: ["develop"]
 
 > 数值基于常见任务 token 消耗，将月额度用于同一功能近似估算，仅供参考
 
-｜ 订阅 ｜ 价格 ｜ Agent 用量 ｜ Kimi Code 额度 ｜
+| 订阅 | 价格 | Agent 用量 | Kimi Code 额度 |
 | ---- | :--: | :--------: | :------------: |
-｜ Adagio ｜ 0 ｜ 6 ｜ / ｜
-｜ Andante ｜ 49 ｜ 30 ｜ 1x ｜
-｜ Moderato ｜ 99 ｜ 60 ｜ 4x ｜
-｜ Allegretto ｜ 199 ｜ 150 ｜ 20x ｜
-｜ Allegro ｜ 699 ｜ 360 ｜ 60x ｜
+| Adagio | 0 | 6 | / |
+| Andante | 49 | 30 | 1x |
+| Moderato | 99 | 60 | 4x |
+| Allegretto | 199 | 150 | 20x |
+| Allegro | 699 | 360 | 60x |
 
 
 
@@ -59,7 +59,7 @@ tags: ["develop"]
 
 现在 MiniMax 还有一些其他模型的额度
 
-| 模型 ｜ 额度(d) ｜
+| 模型 | 额度(d) |
 | :-: | :-----: |
 | music-2.6 | 100 |
 | music-cover | 100 |
